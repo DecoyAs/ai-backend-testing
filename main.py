@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel , Field
 from openai import OpenAI
-import os
+from os import getenv
 
 llm = OpenAI(
     base_url="https://openrouter.ai/api/v1",
