@@ -4,7 +4,7 @@ from openai import OpenAI
 
 llm = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="",
+    api_key=getenv("OPENAI_API_KEY"),
 )
 
 def chatting(message : str):
